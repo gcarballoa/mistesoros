@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Alguien Especial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Valerita...</h1>    
+        <h2>Un pedacito de nuestro corazón</h2>        
+    
+    </header>
+
+    <main>
+        <h3>En este pequeño espacio, queremos recordarte lo mucho que te amamos y lo especial que eres para nosotros.</h3>
+
+        <section class="carousel-container">
+            <div class="carousel" id="carousel">
+                </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </section>
+
+        <section class="messages-container">
+            <div class="message-card">
+                <p>"Te admiro por tu gran valentía de mamá joven!!!"</p>
+                <p style="text-align: right;">- Tu papá</p>
+            </div>
+            
+            <div class="message-card">
+                <p>"Camines donde camines siempre estaré contigo…seré tu apoyo por siempre. Te amo infinitamente."</p>
+                <p style="text-align: right;">- Tu Mami</p>
+            </div>
+            
+            <div class="message-card">
+                <p>"Que nadie frene tu potencial, Dios está a tu lado"</p>
+                <p style="text-align: right;">- Tía Car</p>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>Hecho con ❤️ para ti</p>
+        
+        <div class="audio-control">
+            <button id="musicBtn" onclick="toggleMusic()">
+                <span id="musicIcon">🔇</span>
+                <span class="text-sonido">Activar Sonido</span>
+            </button>
+        </div>
+
+        <audio id="backgroundMusic" loop>
+            <source src="audio/cancion.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
