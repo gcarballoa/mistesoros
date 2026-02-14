@@ -41,7 +41,7 @@ function moveSlide(direction) {
 
 // Inicializar
 cargarImagenes();
-setInterval(() => moveSlide(1), 3000);
+setInterval(() => moveSlide(1), 5000);
 
 
 // --- Lógica de la Lluvia de Corazones ---
